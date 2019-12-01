@@ -31,6 +31,7 @@ const determineCellPositions = (numColumns, cells) => {
 
   // pre-populate a 2D array with correct number of columns and sufficient rows
   const gridAreas = []
+  
   for (let i = 0; i < numRows; i++) {
     gridAreas.push(new Array(numColumns))
   }
@@ -43,11 +44,34 @@ const determineCellPositions = (numColumns, cells) => {
     const rowSpan = cell.getRowSpan()
 
     // --------- WRITE CODE HERE ----------
-
+    
+    // Caitlin: I didn't use the `numRows` variable set above, but I'm using 
+    // the same logic to get it here: numAreas == cells.length, and if the 
+    // current index of cells exceeds the number of columns then it signifies
+    // a new row.
+    if ((cells.indexOf(cell) % numColumns===0)) {
+      pointer[0] = cells.indexOf(cell)/numColumns
+    }
+    
+    // Caitlin: In the End Result.json data, I see when a cell of data is set 
+    // to span more than one column then it just populates the same data into 
+    // that many consecutive cells. This will loop through as many columns as 
+    // specified for the current cell before moving on to the next cell.
+    for (let j=0; j<colSpan; j++) {
+      
+      // Caitlin: This function already existed at the top of this page.
+      setCellPosition(gridAreas, pointer, cell)
+      
+      // Caitlin: Just keeps track of which column per row
+      pointer[1]++
+      if (pointer[1] >= numColumns) {
+        pointer[1] = 0
+      }
+    }
   })
 
   // Compare against `End Result.json`
-  //console.log(gridAreas)
+  // console.log("gridAreas", gridAreas)
 
   return gridAreas
 }
@@ -65,7 +89,7 @@ export default ({content}) => {
     columnWidths = new Array(numColumns).fill('1')
   }
   columnWidths = columnWidths.map(width => width.includes('px') ? width : width + 'fr').join(' ')
-
+  
   const gridStyles = {
     display: 'grid',
     msGridColumns: columnWidths,
@@ -80,7 +104,7 @@ export default ({content}) => {
         if (!renderedCells.includes(cell)) {    
           const key = cellIDPrefix + cell.getID()
 
-          renderedCells.push(cell)      
+          renderedCells.push(cell)
           
           const cellStyles = {
             msGridRow: rowIndex + 1,
@@ -94,7 +118,8 @@ export default ({content}) => {
             <div 
               key={key} 
               className={`grid__cell grid__cell-colspan-${cell.getColSpan()} grid__cell-rowspan-${cell.getRowSpan()} grid__column-${columnIndex} grid__row-${rowIndex}`}
-              style={cellStyles}>
+              style={cellStyles}
+            >
               {cell.getBodyContent()}
             </div>
           )
