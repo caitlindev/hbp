@@ -45,33 +45,36 @@ const determineCellPositions = (numColumns, cells) => {
 
     // --------- WRITE CODE HERE ----------
     
-    // Caitlin: I didn't use the `numRows` variable set above, but I'm using 
-    // the same logic to get it here: numAreas == cells.length, and if the 
-    // current index of cells exceeds the number of columns then it signifies
-    // a new row.
-    if ((cells.indexOf(cell) % numColumns===0)) {
-      pointer[0] = cells.indexOf(cell)/numColumns
-    }
-    
     // Caitlin: In the End Result.json data, I see when a cell of data is set 
     // to span more than one column then it just populates the same data into 
     // that many consecutive cells. This will loop through as many columns as 
     // specified for the current cell before moving on to the next cell.
+    console.log("------------------")
+    console.log("row: ", pointer[0])
+
     for (let j=0; j<colSpan; j++) {
-      
+
       // Caitlin: This function already existed at the top of this page.
-      setCellPosition(gridAreas, pointer, cell)
+      console.log(pointer)
+      for (let r=0; r<rowSpan; r++) {
+        console.log(r)
+        setCellPosition(gridAreas, [pointer[0]+r, pointer[1]], cell)
+      }
       
       // Caitlin: Just keeps track of which column per row
       pointer[1]++
       if (pointer[1] >= numColumns) {
         pointer[1] = 0
+
+        // Caitlin: cells.indexOf(cell) was unreliable to keep track of rows 
+        // count, needed to increment pointer[0] on however many rowSpan specifies.
+        pointer[0]+=rowSpan
       }
     }
   })
 
   // Compare against `End Result.json`
-  // console.log("gridAreas", gridAreas)
+  console.log("gridAreas", gridAreas)
 
   return gridAreas
 }
