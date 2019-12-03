@@ -38,6 +38,7 @@ const determineCellPositions = (numColumns, cells) => {
 
   // iterate through each cell and set the proper positions in the array
   let pointer = [0, 0]
+  
   cells.forEach(cell => {
     const [row, col] = pointer
     const colSpan = cell.getColSpan()
@@ -49,16 +50,19 @@ const determineCellPositions = (numColumns, cells) => {
     // to span more than one column then it just populates the same data into 
     // that many consecutive cells. This will loop through as many columns as 
     // specified for the current cell before moving on to the next cell.
-    console.log("------------------")
-    console.log("row: ", pointer[0])
 
     for (let j=0; j<colSpan; j++) {
-
-      // Caitlin: This function already existed at the top of this page.
-      console.log(pointer)
       for (let r=0; r<rowSpan; r++) {
-        console.log(r)
-        setCellPosition(gridAreas, [pointer[0]+r, pointer[1]], cell)
+
+        // Caitlin: Was trying to occupy spots in the grid already taken by
+        // previously placed cells with multi-row spans. Check if current row/col
+        
+        let containsCell = gridAreas[pointer[0]+r][pointer[1]]
+        if (containsCell) {
+          pointer[1]++
+        }
+        // Caitlin: This function already existed at the top of this page.
+        setCellPosition(gridAreas, [pointer[0] + r, pointer[1]], cell)
       }
       
       // Caitlin: Just keeps track of which column per row
@@ -68,13 +72,13 @@ const determineCellPositions = (numColumns, cells) => {
 
         // Caitlin: cells.indexOf(cell) was unreliable to keep track of rows 
         // count, needed to increment pointer[0] on however many rowSpan specifies.
-        pointer[0]+=rowSpan
+        pointer[0] += rowSpan
       }
     }
   })
-
+  
   // Compare against `End Result.json`
-  console.log("gridAreas", gridAreas)
+  // console.log("gridAreas", gridAreas)
 
   return gridAreas
 }
