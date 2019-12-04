@@ -45,35 +45,45 @@ const determineCellPositions = (numColumns, cells) => {
     const rowSpan = cell.getRowSpan()
 
     // --------- WRITE CODE HERE ----------
-    
-    // Caitlin: In the End Result.json data, I see when a cell of data is set 
-    // to span more than one column then it just populates the same data into 
-    // that many consecutive cells. This will loop through as many columns as 
-    // specified for the current cell before moving on to the next cell.
 
-    for (let j=0; j<colSpan; j++) {
-      for (let r=0; r<rowSpan; r++) {
+    /**
+     * Caitlin: In the End Result.json data, I see when a cell of data is set to 
+     * span more than one column then it just populates the same data into that many 
+     * consecutive cells. This will loop through as many columns as specified for 
+     * the current cell before moving on to the next cell.
+     */
 
-        // Caitlin: Was trying to occupy spots in the grid already taken by
-        // previously placed cells with multi-row spans. Check if current row/col
-        
-        let containsCell = gridAreas[pointer[0]+r][pointer[1]]
-        if (containsCell) {
-          pointer[1]++
+    if (rowSpan >= 1 && colSpan >= 1) {
+      for (let j = 0; j < colSpan; j++) {
+        for (let r = 0; r < rowSpan; r++) {
+  
+          /**
+           * Caitlin: Was trying to occupy spots in the grid already taken by previously 
+           * placed cells with multi-row spans. Check if current row/col slot is taken 
+           * first, and if it is then bump the current cell a column.
+           */
+          if (gridAreas[pointer[0] + r][pointer[1]]) {
+            pointer[1]++
+          }
+
+          // Caitlin: This function already existed at the top of this page.
+          setCellPosition(gridAreas, [pointer[0] + r, pointer[1]], cell)
         }
-        // Caitlin: This function already existed at the top of this page.
-        setCellPosition(gridAreas, [pointer[0] + r, pointer[1]], cell)
+        
+        // Caitlin: Just keeps track of which column per row.
+        pointer[1]++
+        if (pointer[1] >= numColumns) {
+          pointer[1] = 0
+  
+          /**
+           * Caitlin: cells.indexOf(cell) was unreliable to keep track of rows count, 
+           * needed to increment pointer[0] on however many rowSpan specifies.
+           */
+          pointer[0] += rowSpan
+        }
       }
-      
-      // Caitlin: Just keeps track of which column per row
-      pointer[1]++
-      if (pointer[1] >= numColumns) {
-        pointer[1] = 0
-
-        // Caitlin: cells.indexOf(cell) was unreliable to keep track of rows 
-        // count, needed to increment pointer[0] on however many rowSpan specifies.
-        pointer[0] += rowSpan
-      }
+    } else {
+      throw new Error('A cell must have `colSpan` and `rowSpan` defined and greater than 0.');
     }
   })
   
