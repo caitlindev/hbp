@@ -1,0 +1,711 @@
+{
+  "data": {
+    "numColumns": 3,
+    "columnWidths": [
+      "1",
+      "2",
+      "2"
+    ],
+    "cells": [
+      {
+        "data": {
+          "id": "3CDKuk31Vrohb6DcDut6xm",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "b",
+                    "key": "0",
+                    "ref": null,
+                    "props": {
+                      "children": "Date/Time"
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "4Q1C56J9mue1hEENmZO0r1",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "b",
+                    "key": "0",
+                    "ref": null,
+                    "props": {
+                      "children": "Session"
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "4suqTPwbNGGij7xjDum1cb",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "b",
+                    "key": "0",
+                    "ref": null,
+                    "props": {
+                      "children": "Learning Materials*"
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "3P6OhWZlNVfo1bXdql4UMx",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "Nov 13\n2-6pm"
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "3nWYU1Wzf8lWj9VrGDdRnn",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "Introduction: Why Culture Matters"
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "5RrEc3lnpDqWaCNi4V1em2",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "ul",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "li",
+                    "key": "0",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Meyer, E. 2015. ",
+                              {
+                                "type": "a",
+                                "key": "1",
+                                "ref": null,
+                                "props": {
+                                  "href": "https://hbsp.harvard.edu/product/R1510C-PDF-ENG",
+                                  "children": [
+                                    "When culture doesn't translate."
+                                  ]
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              " ",
+                              {
+                                "type": "i",
+                                "key": "3",
+                                "ref": null,
+                                "props": {
+                                  "children": "Harvard Business Review"
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              ", 93(10): 66-72."
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "1",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Role play: Bafa bafa"
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            },
+            {
+              "type": "p",
+              "key": "1",
+              "ref": null,
+              "props": {
+                "children": [
+                  ""
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "zt1QraHk7PJLDX7BVfkYt",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "Nov 27\n1-5pm"
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "29veeOm0Q8Fl6Uk7gMde7Z",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "Session 4: Managing Cultural Differences"
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "buUKrRbTQJS0m3HVtj5oT",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "ul",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "li",
+                    "key": "0",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Brett, J. et al. 2006. ",
+                              {
+                                "type": "a",
+                                "key": "1",
+                                "ref": null,
+                                "props": {
+                                  "href": "https://hbsp.harvard.edu/product/R0611D-PDF-ENG",
+                                  "children": [
+                                    "Managing multicultural teams."
+                                  ]
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              " ",
+                              {
+                                "type": "i",
+                                "key": "3",
+                                "ref": null,
+                                "props": {
+                                  "children": "Harvard Business Review"
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              ", 84(11): 84-91."
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "1",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Video case study: A world of difference"
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "2",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Case study: ",
+                              {
+                                "type": "a",
+                                "key": "1",
+                                "ref": null,
+                                "props": {
+                                  "href": "https://hbsp.harvard.edu/product/414059-PDF-ENG",
+                                  "children": [
+                                    "(Re)Building a global team: Tariq Khan at Tek"
+                                  ]
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              ""
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "3",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Online simulation: ",
+                              {
+                                "type": "a",
+                                "key": "1",
+                                "ref": null,
+                                "props": {
+                                  "href": "https://hbsp.harvard.edu/product/7101-HTM-ENG",
+                                  "children": [
+                                    "Tip of the Iceberg"
+                                  ]
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              ""
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        },
+                        {
+                          "type": "p",
+                          "key": "1",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              " "
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            },
+            {
+              "type": "p",
+              "key": "1",
+              "ref": null,
+              "props": {
+                "children": [
+                  ""
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "3rH8rolHYwcOs8Khhq9ib4",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "Dec 4\n10am-12pm"
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "7oTdWRTrSpLtqfDuuomtwR",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "1-5pm Session 6: Leading Multicultural Organizations"
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "sqea9wPn9C5OFTx9mc8Lg",
+          "colSpan": 1,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "ul",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "li",
+                    "key": "0",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Thomas, D.A & Ely, R.J. 1996. ",
+                              {
+                                "type": "a",
+                                "key": "1",
+                                "ref": null,
+                                "props": {
+                                  "href": "https://hbsp.harvard.edu/product/96510-PDF-ENG",
+                                  "children": [
+                                    "Making differences matter."
+                                  ]
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              " ",
+                              {
+                                "type": "i",
+                                "key": "3",
+                                "ref": null,
+                                "props": {
+                                  "children": "Harvard Business Review"
+                                },
+                                "_owner": null,
+                                "_store": {}
+                              },
+                              ", Sept-Oct.: 1-14."
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "1",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Guest Speaker: Yves Givel, VP HR EAME & SWA, Hyatt Hotels Corporation"
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "2",
+                    "ref": null,
+                    "props": {
+                      "children": [
+                        {
+                          "type": "p",
+                          "key": "0",
+                          "ref": null,
+                          "props": {
+                            "children": [
+                              "Group assignment presentations"
+                            ]
+                          },
+                          "_owner": null,
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            },
+            {
+              "type": "p",
+              "key": "1",
+              "ref": null,
+              "props": {
+                "children": [
+                  ""
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "1v7do3pGeGsRXieYOxiUmS",
+          "colSpan": 1,
+          "rowSpan": 2,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "1v7do3pGeGsRXieYOxiUmS",
+                  "Row span test blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "6hmyeXsL810KVRI8iBYimi",
+          "colSpan": 2,
+          "rowSpan": 2,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "6hmyeXsL810KVRI8iBYimi",
+                  "Column and row span test blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "2NrHRTNSsiHqmSB7CofdSE",
+          "colSpan": 3,
+          "rowSpan": 1,
+          "bodyContent": [
+            {
+              "type": "p",
+              "key": "0",
+              "ref": null,
+              "props": {
+                "children": [
+                  "* Please refer to color code: Reading – Case study – Simulation / Role play – Presentations"
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
