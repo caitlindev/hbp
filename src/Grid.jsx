@@ -20,20 +20,26 @@ const setCellPosition = (gridAreas, position, cell) => {
 }
 
 const findNextAvailable = (gridAreas, row, col, numColumns) => {
-  if (!gridAreas[row][col]) {
-    // console.log(gridAreas[row][col])
-    return [row, col] // make pointer[1] in the cells loop = newSpot
+  let tmpRow = row
+  let tmpCol = col
+  if (!gridAreas[tmpRow][tmpCol]) {
+    // console.log("new coordinates", [tmpRow, tmpCol])
+    return [tmpRow, tmpCol] // make pointer[1] in the cells loop = newSpot
 
   } else {
-    col++
-    if (col >= numColumns) {
-      col = 0
-      row++
-      
-      // keeps calling itself on next open position until one is empty
-      findNextAvailable(gridAreas, row, col, numColumns)
+    // console.log("object occupying slot", gridAreas[tmpRow][tmpCol])
+    // console.log("slot coordinates", [tmpRow, tmpCol])
+    tmpCol++
+    if (tmpCol >= numColumns) {
+      tmpCol = 0
+      tmpRow++
     }
+    
+    // keeps calling itself on next open position until one is empty
+    findNextAvailable(gridAreas, tmpRow, tmpCol, numColumns)
   }
+
+  return [tmpRow, tmpCol]
 }
 
 /**
@@ -65,11 +71,11 @@ const determineCellPositions = (numColumns, cells) => {
 
     for (let j = 0; j < colSpan; j++) {
       for (let r = 0; r < rowSpan; r++) {
-
-        // find next available
-        console.log(findNextAvailable(gridAreas, (pointer[0]+r), pointer[1], numColumns))
-
-        setCellPosition(gridAreas, [pointer[0] + r, pointer[1]], cell)
+        
+        let nextAvailble =  findNextAvailable(gridAreas, (pointer[0]+r), pointer[1], numColumns)
+        // console.log("cell", cell)
+        console.log("nextAvailble: ", nextAvailble) //why is this returning undefined instead of [2,1]?
+        setCellPosition(gridAreas, nextAvailble, cell)
       }
       
       pointer[1]++
@@ -81,7 +87,7 @@ const determineCellPositions = (numColumns, cells) => {
   })
   
   // Compare against `End Result.json`
-  // console.log("gridAreas", gridAreas)
+  console.log("gridAreas", gridAreas)
 
   return gridAreas
 }
