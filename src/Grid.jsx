@@ -23,7 +23,7 @@ const findNextAvailable = (gridAreas, row, col, numColumns) => {
   let tmpRow = row
   let tmpCol = col
   if (!gridAreas[tmpRow][tmpCol]) {
-    // console.log("new coordinates", [tmpRow, tmpCol])
+    console.log("new coordinates", [tmpRow, tmpCol])
     return [tmpRow, tmpCol] // make pointer[1] in the cells loop = newSpot
 
   } else {
@@ -36,10 +36,10 @@ const findNextAvailable = (gridAreas, row, col, numColumns) => {
     }
     
     // keeps calling itself on next open position until one is empty
-    findNextAvailable(gridAreas, tmpRow, tmpCol, numColumns)
+    return findNextAvailable(gridAreas, tmpRow, tmpCol, numColumns)
   }
 
-  return [tmpRow, tmpCol]
+  // return [tmpRow, tmpCol]
 }
 
 /**
@@ -72,10 +72,8 @@ const determineCellPositions = (numColumns, cells) => {
     for (let j = 0; j < colSpan; j++) {
       for (let r = 0; r < rowSpan; r++) {
         
-        let nextAvailble =  findNextAvailable(gridAreas, (pointer[0]+r), pointer[1], numColumns)
-        // console.log("cell", cell)
-        console.log("nextAvailble: ", nextAvailble) //why is this returning undefined instead of [2,1]?
-        setCellPosition(gridAreas, nextAvailble, cell)
+        let nextAvailable =  findNextAvailable(gridAreas, (pointer[0]+r), pointer[1], numColumns)
+        setCellPosition(gridAreas, nextAvailable, cell)
       }
       
       pointer[1]++
